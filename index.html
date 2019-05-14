@@ -92,10 +92,23 @@
             color:#9fc0c2;
         }
     </style>
-    <!-- Push Monkey code --><link id="pm-manifest" rel="manifest" href="https://getpushmonkey.com/manifest-HA736XSCDWYZ2NEUQ.json"><script type="text/javascript" id="pm-sdk" src="https://getpushmonkey.com/sdk/config-HA736XSCDWYZ2NEUQ.js?not_wp=1"></script>
+<link rel="manifest" href="/manifest.json" />
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "243664c6-8b00-4ae0-833c-f51f39e0ba33",
+    });
+  });
+</script>
 </head>
 <body>
-        <p class="notice"><b>coming soon.</b> <br /><br /><button onclick="window._pushmonkey.manualStart()">Keep me Informed</button> <br /><span class="helper">we'll notify you when our store is online</span></p>
+        <p class="notice"><b>coming soon.</b></p>
+        <div class='onesignal-customlink-container'></div>
+        <p class="notice"><br />
+            <!-- <button>Keep me Informed</button>  -->
+            <span class="helper">we'll notify you when our store is online</span></p>
     <div class="wrap">
         <div class="logo">
     <h1>Roshbio</h1>
