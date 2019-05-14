@@ -71,7 +71,8 @@
             padding:10px;
         }
         button{
-            font-size: 15px;
+            font-family: 'Karla', sans-serif;
+            font-size: 13px;
             border-radius:7px;
             background-color: #7da7aa;
             border:1px solid #7da7aa;
@@ -80,6 +81,7 @@
             cursor: pointer;
             opacity: 0.8;
             font-weight: bold;
+            text-transform: uppercase;
         }
         button:hover{
             opacity:1;
@@ -92,7 +94,7 @@
             color:#9fc0c2;
         }
     </style>
-<link rel="manifest" href="/manifest.json" />
+<!-- <link rel="manifest" href="/manifest.json" />
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
   var OneSignal = window.OneSignal || [];
@@ -101,14 +103,14 @@
       appId: "243664c6-8b00-4ae0-833c-f51f39e0ba33",
     });
   });
-</script>
+</script> -->
 </head>
 <body>
-        <p class="notice"><b>coming soon.</b></p>
-        <p class="notice"><div class='onesignal-customlink-container'></div></p>
-        <p class="notice"><br />
-            <!-- <button>Keep me Informed</button>  -->
-            <span class="helper">we'll notify you when our store is online</span></p>
+        <p class="notice"><b>coming soon</b></p>
+        <!-- <p class="notice"><div class='onesignal-customlink-container'></div></p>
+        <p class="notice"><br /><br />
+            <button id="notify">Keep me Informed</button> <br />
+            <span class="helper">we'll notify you when our store is online</span></p> -->
     <div class="wrap">
         <div class="logo">
     <h1>Roshbio</h1>
@@ -124,6 +126,18 @@
             Roshtec Life Science<br />
             303, 2<sup>nd</sup> Cross, 9<sup>th</sup> Main, Near Canara Bank Colony <br />Nagarbhavi, Bengaluru, KA 560072, IN
     </footer>
-
+<!-- <script>
+var notify = document.getElementById("notify");
+notify.onclick = function(){
+    OneSignal.isPushNotificationsEnabled(function(isEnabled) {
+    if (isEnabled){
+      console.log("Push notifications are enabled!");
+    }
+    else{
+        OneSignal.showNativePrompt();
+    }   
+  });
+};
+</script> -->
 </body>
 </html>
